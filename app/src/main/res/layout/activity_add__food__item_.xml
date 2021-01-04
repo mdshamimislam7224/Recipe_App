@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        tools:context=".MainActivity">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Add Your Iteam"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@id/image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/mood_ic"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/textView"
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagename"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:hint="Enter the Image Name"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_below="@+id/image"
+            />
+
+
+        <EditText
+            android:id="@+id/foodtitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:layout_below="@id/imagename"
+            android:hint="Example-Beef /Fish/Rich/vegitable..."
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <EditText
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Example-chiken beef,beef/birani/hazi birani"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+           android:layout_below="@+id/foodtitle" />
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Enter Food Title Details"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/subtitle"
+            />
+
+        <EditText
+            android:id="@+id/equipment"
+            android:layout_width="404dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Enter Equipment of Food Title"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/textView5" />
+
+        <EditText
+            android:id="@+id/processing"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Processing of Title Food"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/equipment" />
+
+
+
+        <Button
+            android:id="@+id/saveimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/processing"
+            android:layout_marginTop="63dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Add Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/viewimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveimage"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="View Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

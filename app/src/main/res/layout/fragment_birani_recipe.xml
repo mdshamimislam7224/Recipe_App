@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Birani_recipe">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="70dp"
+        android:text="@string/chicken_biryani"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+    <TextView
+        android:id="@+id/upokoron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_upkoron"
+        android:textSize="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+    <TextView
+       android:id="@+id/upokoron_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upokoron_detail"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/upokoron"/>
+    <TextView
+        android:id="@+id/pronali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pronali"
+        android:textSize="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/upokoron_details"/>
+
+    <TextView
+        android:id="@+id/pronalidetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pronali_detail"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/pronali"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

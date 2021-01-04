@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Recipe Apps</string>
+    <string name="রেসিপি">রেসিপি</string>
+    <string name="like">"পছন্দ"</string>
+    <string name="recipe_tips">রেসিপি টিপস</string>
+    <string name="health_tips">স্বাস্থ্য টিপস</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="bangla_recipe">বাংলা রেসিপি</string>
+
+
+    <string name="rice">ভাত</string>
+    <string name="beef">মাংস</string>
+    <string name="Beef">" গরু"</string>
+    <string name="Birani">" বিরানী"</string>
+    <string name="pollow">পোলাও</string>
+    <string name="mutton">মাটন</string>
+    <string name="Murgi">" মুরগি"</string>
+    <string name="Kebab">কাবাব</string>
+    <string name="eilish">ইলিশ</string>
+    <string name="Rui">রুই</string>
+    <string name="chingri">চিংড়ি</string>
+    <string name="small">ছোট</string>
+    <string name="other">অন্যান্য</string>
+    <string name="curry">তরকারি</string>
+    <string name="vorta">ভোর্তা</string>
+    <string name="Dal">ডাল</string>
+    <string name="Salad">" সালাদ"</string>
+    <string name="vegetable">সবজি</string>
+    <string name="fish">" মাছ"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chicken_biryani">চিকেন বিরিয়ানি</string>
+    <string name="chicken_upkoron">উপকরণ</string>
+    <string name="upokoron_detail">1.বাসমতি চাল — 2 কাপ 2.টুকরো করা চিকেন — 500 গ্রাম 3.কাঁচা লঙ্কা — 2টি 4.কুচানো পেয়াঁজ — 1টি 5.কুচানো টমেটো — 1টি 6.নারকেলের দুধ — 1 কাপ 7.এলাচ — 1টি 8.দারচিনি — 1 টুকরো 9.লবঙ্গ — 3টি 10.স্টার অ্যানিস — 1টি 11.ধনে পাতা — 1 আঁটি 12.নুন স্বাদ অনুযায়ী 13.লঙ্কা গুঁড়ো — 1 ছোট চামচ 14.তেল — 3 বড় চামচ 15.হলুদ গুঁড়ো — 1 ছোট চামচ 16.আদা রসুন বাটা — 2 বড় চামচ 17.তেজ পাতা — 1টি 18.গরম মশলা — 1 ছোট চামচ</string>
+    <string name="pronali_detail">চিকেনের টুকরোগুলো খুব ভালো করে ধুয়ে নিয়ে তাতে নুন, লঙ্কার গুঁড়ো, হলুদ গুঁড়ো মেখে সরিয়ে রাখতে হবে৷ চাল ধুইয়ে জলে ভিজিয়ে রাখতে হবে 20 মিনিট৷ এবার প্রেসার কুকারে তেল দিতে হবে৷ তেল গরম হলে তাতে সব গোটা মশলা দিয়ে নাড়তে হবে৷ এবার তাতে কুচানো পেয়াঁজ, কাঁচা লঙ্কা দিয়ে পেয়াঁজ হাল্কা বাদামি হওয়া পর্যন্ত ভাজতে হবে৷ এবার তাতে আদা রসুন বাটা দিয়ে ভাজতে হবে৷ কুচানো টমেটো দিয়ে নরম হওযা পর্যন্ত ভাজতে হবে৷ এখন চিকেনের টুকরো আর গরম মশলা আর অল্প জল (1/4 কাপ) দিয়ে নরম হওয়া পর্যন্ত রাখতে হবে৷ এবার জল ঝড়িয়ে চাল এই চিকেনের মধ্যে দিতে হবে৷ 2 কাপ চালের জন্য সাড়ে তিন কাপ জলের প্রয়োজন হবে৷ এরপর এতে ধনে পাতা ছড়িয়ে দিয়ে কুকারের দুটো হুইসেলের আওয়াজ পর্যন্ত অপেক্ষা করতে হবে৷ কুকারের ভেতরে জমে থাকা বাষ্প কমে এলে রায়তার সঙ্গে গরম গরম পরিবেশন করতে হবে চিকেন বিরয়ানি৷</string>
+    <string name="pronali">তৈরি</string>
+
+</resources>

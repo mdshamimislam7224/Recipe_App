@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addrecipe"
+            android:icon="@drawable/ic_recipe"
+            android:title="Add Recipe" />
+        <item
+            android:id="@+id/recipe"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/রেসিপি" />
+        <item
+            android:id="@+id/recipe_like"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/like" />
+        <item
+            android:id="@+id/recipe_tips"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/recipe_tips" />
+        <item
+            android:id="@+id/recipe_health_tips"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/health_tips" />
+
+        <item android:title="service">
+            <menu>
+
+                <item
+                    android:id="@+id/setting"
+                    android:icon="@drawable/setting"
+                    android:title="Setting" />
+
+                <item
+                    android:id="@+id/moreApps"
+                    android:icon="@drawable/ic_tea"
+                    android:title="More Apps" />
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_tea"
+                    android:title="Share" />
+
+                <item
+                    android:id="@+id/rate"
+                    android:icon="@drawable/ic_tea"
+                    android:title="Rate US" />
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+
+
+                <item
+                    android:id="@+id/exit"
+                    android:icon="@drawable/exit"
+                    android:title="Exit" />
+
+
+
+            </menu>
+
+</item>
+    </group>
+
+</menu>
