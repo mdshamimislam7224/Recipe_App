@@ -1,5 +1,6 @@
 package com.shamim.recipeapps;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -37,7 +38,7 @@ public class RV_Adapter_2nd extends RecyclerView.Adapter<RV_Adapter_2nd.RVViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final RVViewHolderclass holder, final int position) {
+    public void onBindViewHolder(@NonNull final RVViewHolderclass holder, @SuppressLint("RecyclerView") final int position) {
         final Model_Class_Food_Item objectModel_class = model_classArrayList.get(position);
         holder.secondrecycleviewtext.setText(objectModel_class.getImagename());
 

@@ -30,6 +30,6 @@
         android:layout_weight="0.7"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:text="mdshamimislam487@gmail.com" />
+        android:text="Example_mail@gmail.com" />
 
 </LinearLayout>

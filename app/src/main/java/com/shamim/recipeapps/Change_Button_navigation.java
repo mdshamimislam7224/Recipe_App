@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -19,10 +20,10 @@ public class Change_Button_navigation extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
         //I added this if statement to keep the selected fragment when rotating the device
-        /*if (savedInstanceState == null) {
+        if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new HomeFragment()).commit();
-        }*/
+                    new Birani_recipe()).commit();
+        }
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -38,8 +39,9 @@ public class Change_Button_navigation extends AppCompatActivity {
                             selectedFragment = new Birani_recipe();
                             Toast.makeText(Change_Button_navigation.this, "Previous", Toast.LENGTH_SHORT).show();
                             break;
-                        case R.id.home:
-                            //Toast.makeText(Change_Button_navigation.this, "Home", Toast.LENGTH_SHORT).show();
+                        case R.id.home1:
+                            Intent intent = new Intent(Change_Button_navigation.this, MainActivity.class);
+                            startActivity(intent);
                             break;
                     }
                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

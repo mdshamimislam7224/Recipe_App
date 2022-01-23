@@ -2,7 +2,9 @@ package com.shamim.recipeapps;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
+    String TAG="MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         preferences = getSharedPreferences("info", Context. MODE_PRIVATE);
         editor = preferences.edit();
+        Log.d(TAG,"Info="+" "+preferences+editor);
 
 
 
@@ -73,27 +77,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.recipe_tips:
-                Intent inta= new Intent(MainActivity.this, Second_RecycleView.class);
-                startActivity(inta);
+                gotUrl("https://www.femina.in/bengali/food");
+                Toast.makeText(this, "Open browser for github", Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.recipe_health_tips:
-
+                gotUrl("https://www.femina.in/bengali/health");
+                Toast.makeText(this, "Open browser for github", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.moreApps:
-                Toast.makeText(this, "moreApps", Toast.LENGTH_SHORT).show();
+                gotUrl("https://github.com/mdshamimislam7224?tab=repositories");
+                Toast.makeText(this, "Open browser for github", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-                break;
+                Intent sharingInent = new Intent(Intent.ACTION_SEND);
+                sharingInent.setType("text/plain");
+                String shareBody = "https://github.com/mdshamimislam7224/Recipe_App";
+                String shareSubject = "Your Subject here";
 
-            case R.id.rate:
-                Toast.makeText(this, "Rate us", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.setting:
-                Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show();
+                sharingInent.putExtra(Intent.EXTRA_TEXT, shareBody);
+                sharingInent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                startActivity(Intent.createChooser(sharingInent, "Share Using"));
                 break;
             case R.id.logout:
                 SharedPreferences sharedPreferences = getSharedPreferences("info",MODE_PRIVATE);
@@ -102,7 +107,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 editor.commit();
                 Intent intent1= new Intent(MainActivity.this,Login_Register.class);
                 startActivity(intent1);
-
                 Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -113,6 +117,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void gotUrl(String s)
+    {
+        Uri uri= Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
+    }
+
     @Override
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {

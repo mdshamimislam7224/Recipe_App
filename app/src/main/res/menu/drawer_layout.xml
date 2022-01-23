@@ -29,10 +29,7 @@
         <item android:title="service">
             <menu>
 
-                <item
-                    android:id="@+id/setting"
-                    android:icon="@drawable/setting"
-                    android:title="Setting" />
+
 
                 <item
                     android:id="@+id/moreApps"
@@ -44,10 +41,7 @@
                     android:icon="@drawable/ic_tea"
                     android:title="Share" />
 
-                <item
-                    android:id="@+id/rate"
-                    android:icon="@drawable/ic_tea"
-                    android:title="Rate US" />
+
 
                 <item
                     android:id="@+id/logout"

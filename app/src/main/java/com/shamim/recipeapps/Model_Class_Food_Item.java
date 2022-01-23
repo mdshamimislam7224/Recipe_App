@@ -5,6 +5,12 @@ import android.graphics.Bitmap;
 public class Model_Class_Food_Item {
     int id;
     String imagename;
+
+    public Model_Class_Food_Item(Bitmap image) {
+        this.image = image;
+    }
+
+    Bitmap imagename1;
     Bitmap image;
     private String foodtitle;
     private String subtitle;
@@ -79,6 +85,7 @@ public class Model_Class_Food_Item {
         this.equipment = equipment;
         this.processing = processing;
     }
+
 
 
 

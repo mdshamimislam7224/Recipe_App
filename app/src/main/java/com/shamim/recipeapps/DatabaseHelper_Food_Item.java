@@ -9,16 +9,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
-
 import java.io.ByteArrayOutputStream;
-import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.List;
-
-import static android.os.Build.ID;
-
 public class DatabaseHelper_Food_Item extends SQLiteOpenHelper {
 
     //just variable Defined global
@@ -31,7 +24,6 @@ public class DatabaseHelper_Food_Item extends SQLiteOpenHelper {
     private byte[] ImageInBytes;
     private static final String TAG = "DatabaseHelper_Food_Ite";
     private static final int Version = 3;
-
     //Context means from user's Information
     private Context context;
 
@@ -86,7 +78,7 @@ public class DatabaseHelper_Food_Item extends SQLiteOpenHelper {
 
         return extractData(objectCursor);
     }
-    /*public ArrayList<Model_Class_Food_Item> getmatch() {
+    public ArrayList<Model_Class_Food_Item> getmatch() {
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         ArrayList<Model_Class_Food_Item> objectModel_classes = new ArrayList<>();
         Cursor objectCursor = sqLiteDatabase.rawQuery("select * from Image_INFO WHERE Recipe_Info LIKE 'bus';", null);
@@ -108,7 +100,7 @@ public class DatabaseHelper_Food_Item extends SQLiteOpenHelper {
 
 
         return null;
-    }*/
+    }
 
 
     /*public Integer deletedata(String id) {

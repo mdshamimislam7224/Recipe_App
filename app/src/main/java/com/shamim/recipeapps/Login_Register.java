@@ -47,11 +47,10 @@ public class Login_Register extends AppCompatActivity implements View.OnClickLis
             Intent intent = new Intent(Login_Register.this, MainActivity.class);
             startActivity(intent);
             finish();
-        } else {
+        }
+        else {
             textView.setText("Register Page");
         }
-
-
         Intent intent = getIntent();
         type = intent.getStringExtra("user");
 
@@ -104,8 +103,6 @@ public class Login_Register extends AppCompatActivity implements View.OnClickLis
         textView.setText("Login Page");
         signup.setVisibility(View.VISIBLE);
         login.setVisibility(View.GONE);
-
-
         donothaveaccunt.setVisibility(View.GONE);
 
     }
@@ -169,7 +166,6 @@ public class Login_Register extends AppCompatActivity implements View.OnClickLis
                         editor.putString("password", userpassword);
                         editor.putBoolean("isLogged", true);
                         editor.commit();
-
 
                         Intent login = new Intent(Login_Register.this, MainActivity.class);
                         startActivity(login);
